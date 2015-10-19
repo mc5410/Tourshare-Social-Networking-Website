@@ -1,0 +1,260 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="USER MasterPage.master.cs" Inherits="USER_MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>USER</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            height: 39px;
+        }
+        .auto-style1 {
+            width: 244px;
+            font-weight: 700;
+        }
+        .auto-style2 {
+            width: 244px;
+            height: 23px;
+        }
+        .auto-style3 {
+            width: 244px;
+            height: 161px;
+        }
+        .auto-style4 {
+            width: 23px;
+        }
+        .auto-style5 {
+            width: 1576px;
+        }
+        .auto-style6 {
+            height: 184px;
+        }
+        .auto-style7 {
+            height: 184px;
+        }
+        .auto-style8 {
+            width: 23px;
+            height: 184px;
+        }
+        .auto-style9 {
+            width: 518px;
+        }
+        .auto-style11 {
+            height: 51px;
+        }
+        .auto-style12 {
+            width: 244px;
+            font-weight: 700;
+            height: 23px;
+        }
+        .auto-style13 {
+            width: 1123px;
+        }
+        .auto-style14 {
+            height: 184px;
+            width: 1123px;
+            font-weight: bold;
+        }
+        .auto-style16 {
+            height: 184px;
+            font-weight: bold;
+        }
+        .auto-style18 {
+            width: 244px;
+            height: 23px;
+            font-size: xx-large;
+        }
+        .auto-style19 {
+            font-size: x-large;
+        }
+        .auto-style20 {
+            height: 184px;
+            font-size: x-large;
+            font-weight: bold;
+            width: 217px;
+        }
+        .auto-style21 {
+            width: 217px;
+        }
+        .auto-style23 {
+            height: 184px;
+            width: 176px;
+        }
+        .auto-style24 {
+            width: 176px;
+        }
+    </style>
+</head>
+<body background="/images/2.jpg"   >
+    <form id="form1" runat="server">
+    <table class="style1">
+        <tr>
+            <td colspan="11" style="text-align: center; margin-left: 80px">
+                <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Italic="False" 
+                    Font-Size="XX-Large" style="text-align: center" Text="TourShare"></asp:Label>
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style24">
+                &nbsp;</td>
+            <td class="auto-style21">
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+            <td class="auto-style13">
+                &nbsp;</td>
+            <td class="auto-style5">
+                &nbsp;</td>
+            <td class="auto-style9">
+                &nbsp;</td>
+            <td class="auto-style4">
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="11" style="text-align: center" class="auto-style11">
+                <asp:Menu ID="Menu2" runat="server" 
+                    onmenuitemclick="Menu2_MenuItemClick" Orientation="Horizontal" 
+                    style="margin-left: 0px" Width="1177px" BackColor="#FFFBD6" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#990000" StaticSubMenuIndent="10px">
+                    <StaticHoverStyle BackColor="#990000" ForeColor="White" />
+                    <StaticMenuItemStyle BorderStyle="Groove" BorderWidth="3px" 
+                        HorizontalPadding="75px" VerticalPadding="10px" />
+                    <DynamicHoverStyle BackColor="#990000" ForeColor="White" />
+                    <DynamicMenuItemStyle HorizontalPadding="75px" VerticalPadding="10px" />
+                    <DynamicMenuStyle BackColor="#FFFBD6" />
+                    <DynamicSelectedStyle BackColor="#FFCC66" />
+                    <DynamicItemTemplate>
+                        <%# Eval("Text") %>
+                    </DynamicItemTemplate>
+                    <Items>
+                        <asp:MenuItem Text="Home" Value="HOME" NavigateUrl="~/USER HOME.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="About" Value="About" 
+                            NavigateUrl="~/USER ABOUT.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Contact US" Value="SETTINGS" NavigateUrl="~/USER CONTACTUS.aspx"></asp:MenuItem>
+                       
+                        <asp:MenuItem Text="Change Password" Value="Change Password" NavigateUrl="~/USER CHANGE PASSWORD.aspx"></asp:MenuItem>
+                       
+                        <asp:MenuItem Text="Logout" Value="Logout" NavigateUrl="~/HOME LOGIN.aspx"></asp:MenuItem>
+                       
+                    </Items>
+                    <StaticSelectedStyle BackColor="#FFCC66" />
+                </asp:Menu>
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style23">
+                <img alt="image" class="auto-style3" /></td>
+            <td class="auto-style20">
+                <span class="auto-style19">&nbsp;Hi,</span><asp:Label ID="Label3" runat="server" Text="Label" CssClass="auto-style19"></asp:Label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </td>
+            <td class="auto-style16">
+                <asp:LinkButton ID="LinkButton1" runat="server" Font-Size="Large" ForeColor="Black" onclick="LinkButton1_Click" CssClass="auto-style18" PostBackUrl="~/USER HOME.aspx">Home</asp:LinkButton>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </td>
+            <td class="auto-style16">
+                <asp:LinkButton ID="LinkButton2" runat="server" Font-Size="Large" 
+            ForeColor="Black" 
+            onclick="LinkButton2_Click" CssClass="auto-style18" PostBackUrl="~/USER PROFILE.aspx">Profile</asp:LinkButton>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </td>
+            <td class="auto-style16">
+                <asp:LinkButton ID="LinkButton3" runat="server" Font-Size="Large" 
+            ForeColor="Black" 
+            onclick="LinkButton3_Click" CssClass="auto-style18" PostBackUrl="~/USER FRIENDS.aspx">Friends</asp:LinkButton>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </td>
+            <td class="auto-style14">
+                <asp:LinkButton ID="LinkButton4" runat="server" Font-Size="Large" 
+            ForeColor="Black" 
+            onclick="LinkButton4_Click" CssClass="auto-style18" PostBackUrl="~/USER CIRCLES.aspx">Cirlces</asp:LinkButton>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </td>
+            <td class="auto-style7" colspan="2">
+                <br />
+                <asp:TextBox ID="TextBox1" runat="server" style="margin-left: 56px; text-align: left;" CssClass="auto-style1" OnTextChanged="TextBox1_TextChanged" Width="122px"></asp:TextBox>
+                </td>
+            <td class="auto-style8">
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Button ID="Button1" runat="server" style="margin-left: 0px" Text="Search" Width="93px" />
+                </td>
+            <td class="auto-style6">
+                </td>
+            <td class="auto-style6">
+                </td>
+        </tr>
+    </table>
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+
+        <div>
+    <table>
+        <tr>
+            <td class="auto-style2">
+               <%-- <asp:ImageButton ID="ImageButton1" runat="server" Height="308px" 
+                ImageUrl="~/images/478x202_SunnerHotels.jpg" onclick="ImageButton1_Click" 
+                style="margin-left: 111px" Width="399px" />--%>
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td class="auto-style1">
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td class="auto-style1">
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td class="auto-style12">
+                </td>
+        </tr>
+        <tr>
+            <td class="auto-style1">
+                &nbsp;<br />
+                <br />
+            </td>
+        </tr>
+      <tr>
+            <td class="auto-style1">
+                &nbsp;<br />
+                <br />
+            </td>
+        </tr><tr>
+            <td class="auto-style1">
+                &nbsp;<br />
+                <br />
+            </td>
+        </tr><tr>
+            <td class="auto-style1">
+                &nbsp;<br />
+                <br />
+            </td>
+        </tr><tr>
+            <td class="auto-style1">
+                &nbsp;</td>
+        </tr>
+
+    </table>
+    </div>
+    </form>
+
+        </body>
+</html>
